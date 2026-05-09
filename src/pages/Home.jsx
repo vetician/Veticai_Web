@@ -52,13 +52,13 @@ export default function Home() {
   return (
     <main className="pt-16">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-emerald-50 to-teal-100 min-h-[90vh] flex items-center">
-        <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <section className="bg-gradient-to-br from-emerald-50 to-teal-100 min-h-screen md:min-h-[90vh] flex items-center">
+        <div className="max-w-6xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <span className="bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full animate-fade-left">
               🐾 India's #1 Pet Care Platform
             </span>
-            <h1 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900 leading-tight animate-fade-left delay-100">
+            <h1 className="mt-4 text-3xl md:text-5xl font-bold text-gray-900 leading-tight animate-fade-left delay-100">
               Book Trusted Pet Care Services{' '}
               <span className="text-emerald-600">Near You</span>
             </h1>
@@ -183,19 +183,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* App Download */}
-      <section id="app" className="py-20 bg-emerald-600 text-white">
+      <section id="app" className="py-16 bg-emerald-600 text-white">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-bold mb-4">Manage All Pet Care From One App</h2>
+          <div className="text-center md:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Manage All Pet Care From One App</h2>
             <p className="text-emerald-100 mb-8">Book services, track your provider, manage appointments, and get emergency support — all from your phone.</p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <GooglePlayBadge href="https://play.google.com/store/apps/details?id=com.dkg12.vetician" />
               <AppStoreBadge />
             </div>
           </div>
-          <div className="flex justify-center">
-            <div className="w-48 h-80 bg-emerald-500 rounded-3xl border-4 border-emerald-400 flex items-center justify-center text-6xl shadow-2xl">
+          <div className="flex justify-center mt-8 md:mt-0">
+            <div className="w-36 h-64 md:w-48 md:h-80 bg-emerald-500 rounded-3xl border-4 border-emerald-400 flex items-center justify-center text-5xl md:text-6xl shadow-2xl">
               📱
             </div>
           </div>
@@ -211,7 +210,7 @@ export default function Home() {
               {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
             </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {reviews.map(({ name, pet, text }) => (
               <div key={name} className="bg-gray-50 rounded-2xl p-6">
                 <Quote className="w-8 h-8 text-emerald-200 mb-3" />

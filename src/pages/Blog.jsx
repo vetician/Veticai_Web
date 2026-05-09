@@ -68,7 +68,7 @@ export default function Blog() {
       </section>
 
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map(({ title, excerpt, category, date, readTime, emoji }) => (
             <article key={title} className="border border-gray-100 rounded-2xl overflow-hidden hover:shadow-md transition-shadow group cursor-pointer">
               <div className="bg-emerald-50 h-40 flex items-center justify-center text-6xl group-hover:bg-emerald-100 transition-colors">

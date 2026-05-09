@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { Mail, MapPin, Clock } from 'lucide-react'
 import { useState } from 'react'
 
 const CONTACT_EMAIL = 'care@vetician.com'
@@ -32,7 +32,6 @@ export default function Contact() {
             <div className="space-y-6">
               {[
                 { icon: Mail, label: 'Email Us', value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` },
-                { icon: Phone, label: 'Call Us', value: '+91 98765 43210', href: 'tel:+919876543210' },
                 { icon: MapPin, label: 'Location', value: 'India', href: null },
                 { icon: Clock, label: 'Support Hours', value: 'Mon–Sat, 9am – 7pm', href: null },
               ].map(({ icon: Icon, label, value, href }) => (

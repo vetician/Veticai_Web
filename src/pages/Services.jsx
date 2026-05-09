@@ -62,7 +62,7 @@ export default function Services() {
       </section>
 
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map(({ icon: Icon, title, desc, features }) => (
             <div key={title} className="border border-gray-100 rounded-2xl p-6 hover:shadow-md hover:border-emerald-200 transition-all">
               <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4">
